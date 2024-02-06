@@ -25,7 +25,7 @@ export default function SelectBlock() {
 
 
     return (
-        <div className='w-full flex flex-wrap p-3 border-4 mb-2 border-dashed block-scale'>
+        <div className='w-full flex flex-wrap p-3 border-4 mb-2 border-dashed block-scale sm:justify-center'>
             <Select setFilterObj={setFilterObj} name='direction' title='Направление' options={['frontend', 'backend', 'fullstack']}></Select>
             <Select setFilterObj={setFilterObj} name='framework' title='Фреймворк' options={['react', 'vue', 'angular', 'next', 'spring', 'django', 'express', 'laravel', 'flask', 'nuxt']}></Select>
             <Select setFilterObj={setFilterObj} name='istypescript' title='Язык програм.' options={['javascript', 'typescript', 'php', 'python', 'go']}></Select>

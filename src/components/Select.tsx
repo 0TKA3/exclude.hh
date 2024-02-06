@@ -19,7 +19,7 @@ export default function Select({ title, options, name, setFilterObj }: SelectTyp
     };
 
     return (
-        <div className="choose-block flex flex-col items-center bg-white border-[1px] border-[#dfeaf2] rounded-2xl w-64 mb-4 mr-4 h-32 p-4">
+        <div className="choose-block flex flex-col items-center bg-white border-[1px] border-[#dfeaf2] rounded-2xl w-full md:w-64 mb-4 mr-4 md:h-32 p-4">
             <h1 className="mr-1 text-xl font-bold mb-1">{title}</h1>
             <select value={value} onChange={handleChange} className="outline-none p-3 text-lg bg-[#90b4f0] rounded-xl flex items-center justify-center font-medium">
                 {options.map((item, index) => (

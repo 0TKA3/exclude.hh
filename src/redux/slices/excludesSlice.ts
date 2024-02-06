@@ -51,6 +51,7 @@ const excludesSlice = createSlice({
   initialState,
   reducers: {
     setExcludes: (state: string[], { payload }: { payload: FilterObjType }) => {
+      state;
       const excludeValues: string[] = Object.values(payload).filter(value => typeof value === 'string');
       const newArray = wordList.filter(item => !excludeValues.some(exclude => item.includes(exclude)));
       return newArray;
