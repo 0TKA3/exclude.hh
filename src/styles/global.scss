@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Inter;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa;
+}
+
+.container {
+    max-width: 1080px;
+}
+
+.choose-block {
+    transition: all 0.1s linear;
+    &:hover {
+        scale: 1.05;
+    }
+}
+
+.block-scale {
+    transition: all 0.05s linear;
+    &:hover {
+        scale: 1.002;
+    }
+}
+
+.button-scale {
+    transition: all 0.05s linear;
+    &:active {
+        scale: 0.98;
+    }
+}
